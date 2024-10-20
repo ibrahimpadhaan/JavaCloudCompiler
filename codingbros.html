@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       
+        <title>Coding bros</title>
+        <style>
+            
+textarea {
+width: 100%;
+margin: 0 auto;
+height: 75vh;
+background-color: rgb(30,30,30);
+color: white;
+border: 2px solid black;
+resize: none;
+font-size: 190%;
+}
+textarea::placeholder {
+color:grey;
+}
+#button1 {
+margin-top: 2%;
+width: 20%;
+height: 50px;
+background-color: tomato;
+border-radius: 10px;
+border: 0px;
+}
+div {
+    width: 100%;
+}
+p {
+    width: 100%;
+    font-size: 2em;
+    word-wrap: break-word;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Coding bros</h1>
+        <textarea id="input" placeholder="Write Java Code here...."></textarea>
+        <button id="button1" type="run-button" onclick="myfunction()">Run code</button>
+        <h2>Output:</h2>
+        <div>
+        <p id="output"></p>
+        </div>
+        <script>
+            function myfunction() {
+                document.getElementById('output').innerHTML = document.getElementById('input').value;
+            }
+        </script>
+    </body>
+</html>
